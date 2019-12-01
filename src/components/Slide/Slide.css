@@ -10,15 +10,16 @@
 }
 #info-slide{
 	display: block;
-	font-size: 14px;
+	font-size: 13px;
 	color:#E5E5E5;
 	display: grid;
-	grid-template-columns: 127px 30px auto;
+	grid-template-columns: 117px 20px auto;
 	grid-template-rows: 100%;
 	width: 100%;
-	padding: 5px;
+	padding: 7px 10px;
 }
 #info-slide>span{
-	text-shadow: 1px 1px 0.5px rgba(0,0,0,0.35);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
 	text-align: left;
+	font-weight: 450;
 }

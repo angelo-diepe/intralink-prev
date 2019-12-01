@@ -4,13 +4,13 @@
 	text-align: center;
 	position: absolute;
 	z-index: 1;
-	margin:0 auto;
-	top: 60%;
+	margin:30px auto 0 auto;
+	top: 50%;
 
 }
 #slogan{
 	font-size: calc( 12px + 3vmin );
-	color: #ccccccee;
+	color: #ddd;
 	font-weight: 400;
 }
 #intro-button{

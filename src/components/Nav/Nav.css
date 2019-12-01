@@ -6,7 +6,7 @@
 	position: sticky;
 	position: -webkit-sticky;
 	top:0px;
-	z-index:10;
+	z-index:5;
 	border-bottom: 1px solid #E5E5E5;
 }
 #nav-container{
@@ -128,9 +128,10 @@
 	background-color: #fff;
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 64px 25% 30% 64px auto;
+	grid-template-rows: 64px 25% auto 64px auto;
 	grid-row-gap: 10px;
 	transition: all 0.4s ease-out;
+	z-index: 6;
 }
 #nav-back-container{
 	display: flex;
@@ -186,6 +187,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-top: 0px;
 }
 .nav-list-item{
 	list-style: none;
@@ -222,7 +224,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #01162777;
+	color: #01162799;
 }
 .nav-sliding{
 	margin-left: -500px;
