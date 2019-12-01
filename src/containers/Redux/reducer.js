@@ -1,8 +1,8 @@
 import { CHANGE_ROUTE, CHANGE_SIGNUP_LOGIN, CHANGE_LOGGEDIN,CHANGE_OPTION,CHANGE_USER} from "./constants.js";
 
 const initialState={
-   route:"home",
-   isLog:true
+   route:"intro",
+   isLog:false
 }
 
 export const handleRoute=(state=initialState,action={})=>{
