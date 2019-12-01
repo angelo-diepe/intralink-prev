@@ -1,0 +1,8 @@
+#actu-container{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	font-size: 64px;
+	font-weight: bold;
+	width: 100%;
+}

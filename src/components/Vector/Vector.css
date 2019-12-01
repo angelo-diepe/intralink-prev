@@ -1,0 +1,80 @@
+#vector-container{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	text-align:center;
+	align-items: center;
+	align-content: center;
+  z-index:0;
+}
+#vector-container>img{
+	width: 120px;
+}
+#vect2{
+	animation:animate 15s linear infinite;
+}
+#vect1{
+	width: 150px !important;
+}
+#vect3{
+	width: 400px !important;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	animation:animate 100s linear infinite;
+}
+#vect4{
+	width: 150px !important;
+	position: fixed;
+	bottom: 20%;
+	right: 0;
+		animation:animate 50s linear infinite;
+}
+#vect7{
+	width: 120px !important;
+	position: fixed;
+	top: 0;
+	right: 0;
+	animation:animate 5s linear infinite;
+}
+#vect6{
+	width: 100px !important;
+	position: fixed;
+	bottom: 40%;
+	right: 35%;
+	animation:animate infinite 20s linear ;
+}
+@keyframes animate{
+	0%{
+	}
+	25%{
+		margin-bottom:20px;
+		margin-left:10px;
+		transform: rotate(60deg);
+	}
+	50%{
+		margin-bottom: 40px;
+		margin-left: 20px;
+		transform: rotate(120deg);
+	}
+	55%{
+		margin-bottom: 30px;
+		margin-left: 15px;
+		transform: rotate(180deg);
+	}
+	65%{
+		margin-bottom:  20px;
+		margin-left:  10px;
+		transform: rotate(270deg);
+	}
+	85%{
+		margin-bottom:  10px;
+		margin-left:  5px;
+		transform: rotate(360deg);
+	}
+	100%{
+	}
+}

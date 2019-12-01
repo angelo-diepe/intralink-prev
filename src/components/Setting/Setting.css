@@ -1,0 +1,9 @@
+#setting-container{
+	height: calc( 100% - 65px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 64px;
+	font-weight: bold;
+	width: 100%;
+}

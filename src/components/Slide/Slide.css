@@ -1,0 +1,24 @@
+.slide{
+	background-color:#011627;
+	height: 100%;
+	width: 100%;
+	background-position: 50% 60%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-flex;
+	align-items: flex-end;
+}
+#info-slide{
+	display: block;
+	font-size: 14px;
+	color:#E5E5E5;
+	display: grid;
+	grid-template-columns: 127px 30px auto;
+	grid-template-rows: 100%;
+	width: 100%;
+	padding: 5px;
+}
+#info-slide>span{
+	text-shadow: 1px 1px 0.5px rgba(0,0,0,0.35);
+	text-align: left;
+}
