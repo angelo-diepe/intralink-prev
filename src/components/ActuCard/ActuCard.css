@@ -1,0 +1,39 @@
+#actucard-container{
+	width: 380px;
+	height: 280px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:10px auto;
+	overflow: hidden;
+}
+#actucard-info-wrapper{
+	background-color: #22222233;
+	width: 100%;
+	height: calc( 200% + 60px );
+	transition: all 0.5s ease;
+	position: relative;
+	display: flex;
+	align-items: center;
+	top:-60px; 
+	color: #eee;
+	font-size: 16px;
+	font-weight: 450;
+	cursor: pointer;
+}
+#actucard-info-wrapper:hover{
+	background-color: #222222dd;
+	position: relative;
+	top:calc( -50% - 30px);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500
+}
+#info-actucard{
+	height: 60px;
+	background-color: #22222255;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 7.5px;
+}

@@ -6,7 +6,7 @@ export default function Setting() {
 		Array.from(document.querySelectorAll(".selected-lang")).forEach(el=>{if(el.innerHTML!==e.target.innerHTML)el.classList.remove('selected-lang')})
 	}
 	return (
-			<div id="setting-container">
+			<div id="setting-container" className="animated slideInRight delay-1s">
 				<h3 id="setting-title">SETTING</h3>
 				<div id="font-slider">
 					<span id="font-param">Font</span>

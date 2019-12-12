@@ -1,4 +1,4 @@
-import {CHANGE_ROUTE,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN,CHANGE_OPTION,CHANGE_USER} from "./constants.js";
+import {SELECT_ARTICLE,CHANGE_ROUTE,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN,CHANGE_OPTION,CHANGE_USER} from "./constants.js";
 
 export const changeRoute=(route)=>({
     type:CHANGE_ROUTE,
@@ -8,7 +8,10 @@ export const changeRoute=(route)=>({
 export const setLoggedIn = () => ({
     type: CHANGE_LOGGEDIN
 })
-
+export const selectArticle = id => ({
+	type:SELECT_ARTICLE,
+	payload:id
+})
 export const setOption = (text) => ({
     type: CHANGE_OPTION,
     payload: text

@@ -3,7 +3,7 @@ import "./ActuList.css"
 
 const ActuList = ({children}) => {
 	return (
-		<div>
+		<div id="actulist-container">
 			{children}
 		</div>
 	)

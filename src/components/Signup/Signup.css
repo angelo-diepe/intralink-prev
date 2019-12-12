@@ -1,127 +1,222 @@
-.form-signup{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 50% 20%;
-    grid-row-gap: 5%;
-    height: 100%;
+#form-signup-wrapper{
     width: 100%;
-    background-color: #ffffff;
-    box-shadow: -2px 0px 5px 5px rgba(0, 0, 0, 0.35);
-    border-color:transparent;
-    position: relative;
-    z-index: 10;
-}
-/*.form-login>section{
-    font-size: 14px;
-    color:#000000CD;
-}
-.header-login{
-    position: relative;
-}
-.header-login>a{
-    color: #000000AA;
-    border:2px solid #000000AA;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    height: 100%;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    cursor:pointer;
-    padding-bottom: 2px;
-    transition: all 0.1s linear;
-    text-decoration: none;
-
+    position: relative;
+    z-index: 5;
 }
-.header-login>a:hover{
-    color:white;
-    border-color: transparent;
-    background-color: #0076F2;
-}
-.section-login{
-    display:grid;
+#form-signup{
+    width: 80%;
+    height: 90%;
+    display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(auto-fill, 20%);
+    grid-template-rows: 20% 70% 10%;
+    color: #011627;
+}
+.header-signup{
+    background-color: white;
+}
+#title{
+    font-size: 48px;
+}
+#sub-title{
+    font-size: 24px;
+    width: 50%;
+    margin:30px  auto 30px auto;
+}
+.section-signup{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(auto-fill,55px);
     grid-row-gap: 10px;
 }
-.input-login{
-    height: 28px;
-    padding-left: 4px;
-    width:79%;
-    border: none;
-    border-bottom: 1.5px solid #0076F2cc;
-}
-.form-login>section>div{
-    display: flex;
-    width:80%;
-    margin:auto;
-    justify-content: space-between;
-    align-items: center;
-}
-.form-login button{
-    background-color: transparent;
-    border:1.5px solid #0076F2;
-    width: 100px;
-    height: 45px;
-    margin: auto;
-    border-radius: 5px;
-    color: #0076F2;
-    position: relative;
-    bottom:-10px;
-    transition: all 0.1s linear;
-    cursor: pointer;
-    font-size: 13px;
-}
-.form-login button:hover{
-    color:white;
-    border-color: transparent;
-    background-color: #0076F2;
-}
-.footer-login{
-    color: #000000DA;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-}
-.footer-login a{
-    color:#0076F2;
-    cursor: pointer;
-    text-decoration: underline;
-    font-weight: 450;
-}
-.footer-login>span:hover{
-    color: #0076F2BB;
-}
-.question{
+.section-signup>div{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-between;
+    color:#011627dd;
 }
-.question>span{
+#gender-container{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 40px;
+    align-items: center;
+    margin-top: 5px;
+}
+/* The container */
+.container {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #01162788;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.input-signup{
+    width: 100%;
+    height: 80%;
+    border:none;
+    padding-left: 15px;
+    border-bottom: 2px solid #01162788;
+    font-weight: bold;
+    color: #01162788;
     font-size: 15px;
 }
-.input-forgot-pwd{
-    height: 28px;
-    padding-left: 4px;
-    width:100%;
+.input-signup:focus{
+    border-bottom: 2px solid #0076f2;
+    color:#0076f2;
+}
+#next-signup{
     border: none;
-    border-bottom: 2px solid #0076F2cc;
+    width: auto;
+    height: 50px;
+    margin:0 0 0 auto;
+    background-color: transparent;
+    color:#011627;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 15px;
 }
-@media only screen and (max-height:800px) and (max-width:500px){
-    #form-login{
-        height: 100vh;
-        width: 100vw;
-        box-shadow: none;
-        min-height: 500px;
-        border:none;
-        max-height: unset;
-    }
+#next-signup>img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
-input:focus{
-    outline: none;
-}*/
+#next-signup>img:hover{
+    transform: scale(1.05);
+}
+.footer-signup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-signup a{
+    color: #0076f2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#form-signup-2{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 70% 10%;
+    color: #011627;
+}
+#form-signup-2 .input-signup{
+    border:1.5px solid #01162759;
+    font-size: 16px;
+    font-weight: 450;
+    margin-top: 10px;
+}
+#form-signup-2 .input-signup:focus{
+    border:1.5px solid #0076f2;
+}
+#form-signup-2 .section-signup-2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+}
+#direction-signup-page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row-reverse;
+    align-items: center;
+}
+#signup-button{
+    background-color: #0076f2;
+    border:none;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+#signup-button:hover{
+    background-color: #011627;
+}
+#prev-signup{
+    background-color: #fff;
+    border:none;
+}
+#prev-signup>img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transform: rotateY(-180deg);
+    transition: all 0.5s ease;
+}
+#prev-signup>img:hover{
+    transform: rotateY(-180deg) scale(1.05);
+}
+.footer-signup a:hover{
+    color: #011627;
+}

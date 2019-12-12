@@ -1,0 +1,26 @@
+#message-container{
+	display: inline-flex;
+	background-color: white;
+	margin:10px;
+	padding: 15px;
+	padding-right: 20px;
+	height: auto;
+	width: auto;
+	max-width: calc( 50% - 30px );
+	position: relative;
+}
+#time{
+	font-size: 9px;
+	color: #01162775;
+	position: absolute;
+	bottom: 3px;
+	right: 7px;
+}
+.left{
+	align-self: flex-start;
+	background-color: #fff !important;
+}
+.right{
+	align-self: flex-end;
+	background-color: #ddf !important;
+}
