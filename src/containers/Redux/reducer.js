@@ -1,7 +1,7 @@
 import {MODIFY_PROFILE,SEND_PROFILE,SELECT_ARTICLE,CHANGE_ROUTE, CHANGE_SIGNUP_LOGIN, CHANGE_LOGGEDIN,CHANGE_OPTION,CHANGE_USER} from "./constants.js";
 
 const initialState={
-   route:"signup",
+   route:"intro",
    onArticle:{
        status:false,
        id:null
