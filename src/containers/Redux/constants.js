@@ -4,3 +4,5 @@
  export const CHANGE_OPTION = "CHANGE_OPTION";
 export const CHANGE_USER = "CHANGE_USER";
 export const SELECT_ARTICLE = "SELECT_ARTICLE";
+export const MODIFY_PROFILE = "MODIFY_PROFILE";
+export const SEND_PROFILE = "SEND_PROFILE"

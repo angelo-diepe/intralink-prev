@@ -4,13 +4,13 @@ import { Provider} from "react-redux";
 import { createStore, combineReducers, applyMiddleware} from "redux"
 import thunkMiddleware from "redux-thunk";
 import logger from "redux-logger";
-import {handleRoute,handleLogging} from "./containers/Redux/reducer.js";
+import {handleRoute,handleLogging,handleProfile} from "./containers/Redux/reducer.js";
 import './index.css';
 import './animate.css';
 import App from './containers/App/App';
 import * as serviceWorker from './serviceWorker';
 
-const rootReducer=combineReducers({handleRoute,handleLogging})
+const rootReducer=combineReducers({handleRoute,handleLogging,handleProfile})
 const store=createStore(rootReducer,applyMiddleware(thunkMiddleware,logger))
 
 ReactDOM.render(<Provider store={store}>

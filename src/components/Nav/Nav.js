@@ -17,7 +17,7 @@ const Nav = (props) => {
 		navSlider.classList.toggle("nav-sliding");
 	}
 	const offExit=()=>{
-    window.addEventListener('click',(e)=>{if (e.target===document.querySelector('.nav-slider')){
+    window.addEventListener('click',(e)=>{if (e.currentTarget===document.querySelector('.nav-slider')){
        console.log("hello")}
       })
    }
@@ -34,7 +34,7 @@ const Nav = (props) => {
 					<div id="nav-modify-profile-container" style={{backgroundImage:`url(${vectorBg})`}}>
 						<div id="nav-modify-profile-wrapper">
 							<div id="nav-modify-profile" style={{backgroundImage:`url(${profile})`}}>
-								<div id="nav-modify-profile-pencil-container">
+								<div id="nav-modify-profile-pencil-container" onClick={()=>{if(props.changeRoute("profile"))props.modifyProfile()}}>
 									<img src={pencilGray} alt="modify-profile-pencil" id="nav-modify-profile-pencil"/>
 								</div>
 							</div>
@@ -47,14 +47,14 @@ const Nav = (props) => {
 						<li className="nav-list-item"><button className="nav-link-item" onClick={()=>props.changeRoute("setting")}>SETTING</button></li>
 						<li className="nav-list-item"><button className="nav-link-item" onClick={()=>props.changeRoute("help")}>HELP</button></li>
 						<li className="nav-list-item"><button className="nav-link-item" onClick={()=>props.changeRoute("about")}>ABOUT</button></li>
-						<li className="nav-list-item"><button className="nav-link-item" onClick={()=>{props.setLoggedIn();props.changeRoute('intro')}} >LOGOUT</button></li>
+						<li className="nav-list-item"><button className="nav-link-item" onClick={()=>{if(!props.setLoggedIn())props.changeRoute('intro')}} >LOGOUT</button></li>
 					</ul>
 					<div id="nav-social-container">
 						<img src={twitter} alt="social-twitter" className="social"/>
 						<img src={discord} alt="social-discord" className="social"/>
 						<img src={telegramme} alt="social-telegramme" className="social"/>
 					</div>
-					<span id="nav-version">v1.0.1</span>
+					<span id="nav-version">vBeta</span>
 				</div>
 				<div id="nav-right-container">
 					<div id="nav-search-container">
@@ -69,10 +69,10 @@ const Nav = (props) => {
 					</div>
 					<div id="nav-notif-container">
 						<img src={notif} alt="notification" id="nav-notif-icon"/>
-						<span id="nav-notif-count">3</span>
+						<span id="nav-notif-count">0</span>
 					</div>
 					<div id="nav-profile-wrapper">
-						<div id="nav-profile-container" style={{backgroundImage:`url(${profile})`}}>
+						<div id="nav-profile-container" style={{backgroundImage:`url(${profile})`}} onClick={()=>props.changeRoute("profile")}>
 						</div>
 					</div>
 				</div>

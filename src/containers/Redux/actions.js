@@ -1,4 +1,4 @@
-import {SELECT_ARTICLE,CHANGE_ROUTE,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN,CHANGE_OPTION,CHANGE_USER} from "./constants.js";
+import {MODIFY_PROFILE,SEND_PROFILE,SELECT_ARTICLE,CHANGE_ROUTE,CHANGE_SIGNUP_LOGIN,CHANGE_LOGGEDIN,CHANGE_OPTION,CHANGE_USER} from "./constants.js";
 
 export const changeRoute=(route)=>({
     type:CHANGE_ROUTE,
@@ -19,6 +19,13 @@ export const setOption = (text) => ({
 
 export const loadUser = (user) => ({
 	type : CHANGE_USER,
+	payload : user
+})
+export const modifyProfile = () => ({
+	type : MODIFY_PROFILE
+})
+export const sendProfile = (user) => ({
+	type : SEND_PROFILE,
 	payload : user
 })
 // export const setLoggedIn = () => (dispatch)=>{

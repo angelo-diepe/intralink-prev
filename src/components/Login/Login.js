@@ -18,8 +18,8 @@ class  Login extends React.Component {
 			<header className="header-login"><a onClick={()=>this.props.changeRoute('intro')}>&times;</a></header>
 			<section className="section-login">
 			<div id="id-input">
-			<span>Id:</span>
-			<input type="text" placeholder="1800..." className="input-login"/>
+			<span>Email:</span>
+			<input type="text" placeholder="username@example.com" className="input-login"/>
 			</div>
 			<div id="password-input">
 			<span>Password:</span>
